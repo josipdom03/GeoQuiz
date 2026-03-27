@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F9FA">
+
+    <ProgressBar
+        android:id="@+id/quizProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="#6200EE"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCurrentScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bodovi: 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Vrijeme: 15"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pitanje 1/10"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvQuestionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ovdje ide tekst pitanja?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginVertical="30dp" />
+
+    <Button android:id="@+id/btnOpt1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Odgovor 1" android:layout_marginBottom="10dp" />
+    <Button android:id="@+id/btnOpt2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Odgovor 2" android:layout_marginBottom="10dp" />
+    <Button android:id="@+id/btnOpt3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Odgovor 3" android:layout_marginBottom="10dp" />
+    <Button android:id="@+id/btnOpt4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Odgovor 4" android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnHalfHalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pola-Pola (3)"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center" />
+</LinearLayout>
